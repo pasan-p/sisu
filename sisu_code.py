@@ -71,7 +71,7 @@ def main():
     #df5 below is to get dataframe for processing list of post codes based on fastest response
     #Sample of 50 records are selected for this task
 
-    df5 = pd.DataFrame(d, columns = ['Implemented Date ', 'Request Date ','Post Code '])
+    df5 = pd.DataFrame(df, columns = ['Implemented Date ', 'Request Date ','Post Code '])
 
     df5 = df5.head(50)
     
@@ -90,7 +90,7 @@ def main():
     #df6 below is to get dataframe for listing Agents based on amount
     #sample of 10000 records are selected for this task
     
-    df6 = pd.DataFrame(d, columns = ['Agent ID ', 'Post Code ','$ Amount '])
+    df6 = pd.DataFrame(df, columns = ['Agent ID ', 'Post Code ','$ Amount '])
     df6.rename(columns={'$ Amount ': 'Amount'}, inplace=True)
 
     df6 = df6.head(10000)
